@@ -1,7 +1,13 @@
 const bootScreen = document.getElementById("bootScreen");
 const lab = document.getElementById("lab");
-const enterLabButton = document.getElementById("enterLabButton");
 
+const enterLabButton = document.getElementById("enterLabButton");
+const viewProjectsButton = document.getElementById("viewProjectsButton");
+
+
+// =========================================
+// ENTER THE LAB
+// =========================================
 
 enterLabButton.addEventListener("click", () => {
 
@@ -13,8 +19,27 @@ enterLabButton.addEventListener("click", () => {
 
         lab.style.display = "block";
 
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
 
     }, 700);
+
+});
+
+
+// =========================================
+// VIEW PROJECTS
+// =========================================
+
+viewProjectsButton.addEventListener("click", () => {
+
+    const projectsSection = document.getElementById("projects");
+
+    projectsSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 
 });

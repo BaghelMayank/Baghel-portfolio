@@ -18,7 +18,9 @@ body {
     background: #050505;
     color: #ffffff;
     font-family: "Courier New", monospace;
-    overflow: hidden;
+
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
@@ -695,6 +697,341 @@ body {
         transform: scale(1.05);
 
         filter: blur(10px);
+
+    }
+
+}
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+.projects-section {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 150px 50px 120px;
+
+}
+
+
+.projects-header {
+
+    margin-bottom: 80px;
+
+}
+
+
+.projects-header h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(60px, 9vw, 120px);
+
+    line-height: 0.9;
+
+    letter-spacing: -6px;
+
+    font-weight: 900;
+
+}
+
+
+.projects-header h3 span {
+
+    color: #555;
+
+    display: block;
+
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+
+    position: relative;
+
+    min-height: 500px;
+
+    border: 1px solid #222;
+
+    padding: 35px;
+
+    background: #080808;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease;
+
+}
+
+
+.project-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.04),
+            transparent 50%
+        );
+
+    opacity: 0;
+
+    transition: 0.4s;
+
+}
+
+
+.project-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #555;
+
+}
+
+
+.project-card:hover::before {
+
+    opacity: 1;
+
+}
+
+
+/* =========================================
+   PROJECT NUMBER
+========================================= */
+
+.project-number {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 30px;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #444;
+
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.project-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.project-type {
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #555;
+
+    margin-bottom: 35px;
+
+}
+
+
+.project-content h4 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 55px;
+
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.project-content h4 span {
+
+    display: block;
+
+    color: #555;
+
+}
+
+
+.project-description {
+
+    max-width: 400px;
+
+    color: #777;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   PROJECT TECH
+========================================= */
+
+.project-tech {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: auto;
+
+}
+
+
+.project-tech span {
+
+    border: 1px solid #222;
+
+    padding: 7px 10px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #666;
+
+}
+
+
+/* =========================================
+   PROJECT BUTTON
+========================================= */
+
+.project-button {
+
+    align-self: flex-start;
+
+    margin-top: 40px;
+
+    padding: 14px 20px;
+
+    background: transparent;
+
+    border: 1px solid #333;
+
+    color: white;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.project-button span {
+
+    margin-left: 15px;
+
+}
+
+
+.project-button:hover {
+
+    background: white;
+
+    color: black;
+
+}
+
+
+/* =========================================
+   PROJECT MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .projects-section {
+
+        padding: 100px 20px;
+
+    }
+
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .project-card {
+
+        min-height: 450px;
+
+    }
+
+
+    .project-content h4 {
+
+        font-size: 48px;
 
     }
 
