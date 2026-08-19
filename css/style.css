@@ -3004,3 +3004,1142 @@ body {
     }
 
 }
+/* =========================================
+   STEP 4
+   DEVELOPER IDENTITY
+========================================= */
+
+.lab-hero {
+    position: relative;
+}
+
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.developer-avatar {
+
+    position: absolute;
+
+    right: 30px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 380px;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================
+   AVATAR FRAME
+========================================= */
+
+.avatar-frame {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 520px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   CHARACTER IMAGE
+========================================= */
+
+.avatar-frame img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center bottom;
+
+    filter:
+        grayscale(100%)
+        contrast(1.1);
+
+    opacity: 0.75;
+
+    transition:
+        filter 0.5s ease,
+        opacity 0.5s ease,
+        transform 0.5s ease;
+
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.lab-hero:hover .avatar-frame img {
+
+    filter:
+        grayscale(0%)
+        contrast(1.05);
+
+    opacity: 1;
+
+    transform: scale(1.03);
+
+}
+
+
+/* =========================================
+   SCANLINE
+========================================= */
+
+.avatar-frame::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 4px,
+            rgba(255,255,255,0.025) 5px
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================
+   FRAME CORNERS
+========================================= */
+
+.avatar-frame::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 20px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    clip-path: polygon(
+        0 0,
+        30px 0,
+        30px 1px,
+        1px 1px,
+        1px 30px,
+        0 30px,
+
+        0 calc(100% - 30px),
+        1px calc(100% - 30px),
+        1px calc(100% - 1px),
+        30px calc(100% - 1px),
+        30px 100%,
+        0 100%,
+
+        100% 100%,
+        calc(100% - 30px) 100%,
+        calc(100% - 30px) calc(100% - 1px),
+        calc(100% - 1px) calc(100% - 1px),
+        calc(100% - 1px) calc(100% - 30px),
+        100% calc(100% - 30px),
+
+        100% 0,
+        calc(100% - 30px) 0,
+        calc(100% - 30px) 1px,
+        calc(100% - 1px) 1px,
+        calc(100% - 1px) 30px,
+        100% 30px
+    );
+
+}
+
+
+/* =========================================
+   AVATAR LABEL
+========================================= */
+
+.avatar-label {
+
+    position: absolute;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    padding: 8px 12px;
+
+    background: rgba(5,5,5,0.9);
+
+    border: 1px solid #333;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #777;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.avatar-dot {
+
+    width: 5px;
+
+    height: 5px;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 8px #fff;
+
+}
+
+
+/* =========================================
+   MAKE HERO CONTENT SIT ABOVE IMAGE
+========================================= */
+
+.lab-hero > *:not(.developer-avatar) {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =========================================
+   DESKTOP HERO BALANCE
+========================================= */
+
+@media (min-width: 1000px) {
+
+    .lab-hero {
+
+        padding-right: 420px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .developer-avatar {
+
+        position: relative;
+
+        top: auto;
+
+        right: auto;
+
+        transform: none;
+
+        width: 260px;
+
+        height: 300px;
+
+        margin: 0 auto 40px;
+
+        order: -1;
+
+    }
+
+    .avatar-frame {
+
+        height: 300px;
+
+    }
+
+    .lab-hero {
+
+        padding-right: 20px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .developer-avatar {
+
+        width: 220px;
+
+        height: 250px;
+
+        margin-bottom: 30px;
+
+    }
+
+    .avatar-frame {
+
+        height: 250px;
+
+    }
+
+}
+/* =========================================
+   SYSTEMS / SKILLS / EXPERIENCE
+========================================= */
+
+.systems-section {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 120px 50px 150px;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.systems-header {
+
+    margin-bottom: 60px;
+
+}
+
+
+.systems-header h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(60px, 9vw, 120px);
+
+    line-height: 0.9;
+
+    letter-spacing: -6px;
+
+    font-weight: 900;
+
+}
+
+
+.systems-header h3 span {
+
+    display: block;
+
+    color: #555;
+
+}
+
+
+.systems-intro {
+
+    max-width: 550px;
+
+    margin-top: 30px;
+
+    color: #555;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   STATUS BAR
+========================================= */
+
+.systems-status {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px 18px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #222;
+
+    background: #080808;
+
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.systems-status div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.status-indicator {
+
+    width: 6px;
+
+    height: 6px;
+
+    display: inline-block;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    box-shadow: 0 0 10px #fff;
+
+}
+
+
+/* =========================================
+   SYSTEM GRID
+========================================= */
+
+.systems-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+/* =========================================
+   SYSTEM PANEL
+========================================= */
+
+.system-panel {
+
+    position: relative;
+
+    padding: 30px;
+
+    min-height: 520px;
+
+    border: 1px solid #222;
+
+    background: #080808;
+
+    overflow: hidden;
+
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.system-panel:hover {
+
+    border-color: #444;
+
+    transform: translateY(-5px);
+
+}
+
+
+/* =========================================
+   PANEL HEADER
+========================================= */
+
+.system-panel-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-bottom: 18px;
+
+    margin-bottom: 35px;
+
+    border-bottom: 1px solid #1c1c1c;
+
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   PANEL TITLE
+========================================= */
+
+.system-panel h4 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 48px;
+
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.system-panel h4 span {
+
+    display: block;
+
+    color: #555;
+
+}
+
+
+/* =========================================
+   SYSTEM LIST
+========================================= */
+
+.system-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.system-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #151515;
+
+}
+
+
+.system-index {
+
+    color: #444;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.system-item div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+}
+
+
+.system-item strong {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 400;
+
+}
+
+
+.system-item small {
+
+    color: #555;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================
+   TECHNOLOGY GRID
+========================================= */
+
+.technology-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid #151515;
+
+    border-left: 1px solid #151515;
+
+}
+
+
+.technology-item {
+
+    min-height: 90px;
+
+    padding: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border-right: 1px solid #151515;
+
+    border-bottom: 1px solid #151515;
+
+    transition: background 0.3s ease;
+
+}
+
+
+.technology-item:hover {
+
+    background: #0d0d0d;
+
+}
+
+
+.technology-item strong {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+
+}
+
+
+.technology-item span {
+
+    color: #555;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   EXPERIENCE
+========================================= */
+
+.experience-timeline {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.experience-item {
+
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 20px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #151515;
+
+}
+
+
+.experience-year {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 28px;
+
+    font-weight: 900;
+
+    color: #444;
+
+}
+
+
+.experience-item strong {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 400;
+
+}
+
+
+.experience-item p {
+
+    margin-top: 8px;
+
+    color: #666;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   DEVELOPER TERMINAL
+========================================= */
+
+.developer-terminal {
+
+    margin-top: 20px;
+
+    border: 1px solid #222;
+
+    background: #070707;
+
+}
+
+
+.terminal-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 15px 20px;
+
+    border-bottom: 1px solid #1c1c1c;
+
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.terminal-content {
+
+    padding: 25px 20px;
+
+}
+
+
+.terminal-content p {
+
+    margin-bottom: 12px;
+
+    color: #666;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+.terminal-content p span {
+
+    color: #444;
+
+    margin-right: 8px;
+
+}
+
+
+.terminal-content .terminal-highlight {
+
+    margin-top: 25px;
+
+    color: #aaa;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .systems-section {
+
+        padding: 100px 20px;
+
+    }
+
+
+    .systems-status {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .systems-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .system-panel {
+
+        min-height: auto;
+
+    }
+
+
+    .system-panel h4 {
+
+        font-size: 42px;
+
+    }
+
+
+    .technology-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .experience-item {
+
+        grid-template-columns: 55px 1fr;
+
+    }
+
+}
+/* =========================================
+   WHAT I BUILD
+========================================= */
+
+.capabilities-panel {
+
+    margin-top: 20px;
+
+    border: 1px solid #222;
+
+    background: #080808;
+
+}
+
+
+.capabilities-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding: 30px;
+
+    border-bottom: 1px solid #1c1c1c;
+
+}
+
+
+.capabilities-label {
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.capabilities-header h4 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 55px;
+
+    line-height: 0.85;
+
+    letter-spacing: -4px;
+
+    font-weight: 900;
+
+}
+
+
+.capabilities-header h4 span {
+
+    display: block;
+
+    color: #555;
+
+}
+
+
+.capabilities-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.capabilities-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+.capability {
+
+    display: grid;
+
+    grid-template-columns: 45px 1fr;
+
+    gap: 20px;
+
+    padding: 30px;
+
+    min-height: 180px;
+
+    border-right: 1px solid #151515;
+
+    border-bottom: 1px solid #151515;
+
+    transition: background 0.3s ease;
+
+}
+
+
+.capability:nth-child(2n) {
+
+    border-right: none;
+
+}
+
+
+.capability:hover {
+
+    background: #0d0d0d;
+
+}
+
+
+.capability-number {
+
+    color: #444;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.capability-content h5 {
+
+    margin-bottom: 12px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: 400;
+
+}
+
+
+.capability-content p {
+
+    max-width: 420px;
+
+    color: #666;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .capabilities-header {
+
+        flex-direction: column;
+
+        gap: 25px;
+
+    }
+
+
+    .capabilities-header h4 {
+
+        font-size: 45px;
+
+    }
+
+
+    .capabilities-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .capability {
+
+        border-right: none;
+
+    }
+
+}
+/* =========================================
+   TERMINAL ACTIVE INDICATOR
+========================================= */
+
+.terminal-active {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.terminal-active i {
+
+    width: 6px;
+
+    height: 6px;
+
+    display: inline-block;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    box-shadow:
+        0 0 5px #fff,
+        0 0 12px #fff;
+
+    animation: terminalPulse 1.2s infinite;
+
+}
+
+
+@keyframes terminalPulse {
+
+    0%,
+    100% {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        opacity: 0.2;
+
+        transform: scale(0.65);
+
+    }
+
+}
