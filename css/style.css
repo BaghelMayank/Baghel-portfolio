@@ -1196,6 +1196,8 @@ body {
 
 .project-visual {
 
+    position: relative;
+
     width: 100%;
 
     height: 500px;
@@ -1205,17 +1207,45 @@ body {
     margin-bottom: 80px;
 
     background:
-
         linear-gradient(
             135deg,
             #0c0c0c,
             #050505
         );
 
+    overflow: hidden;
+
+}
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+#detailImage {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: none;
+
+    transition: transform 0.5s ease;
+
 }
 
 
+.project-visual:hover #detailImage {
+
+    transform: scale(1.02);
+
+}
+
 .visual-placeholder {
+
+    position: absolute;
+
+    inset: 0;
 
     width: 100%;
 

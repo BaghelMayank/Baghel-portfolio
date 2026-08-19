@@ -22,6 +22,9 @@ const projects = {
 
         subtitle:
             "A reusable 2D sprite-based particle effects tool for Unity.",
+        
+        image:
+        "assets/projects/particlefx/hero.png",    
 
         about:
             "Designed and developed a reusable particle effects tool from concept to Asset Store release. The tool focuses on creating dynamic 2D sprite-based effects while maintaining compatibility across Unity rendering pipelines.",
@@ -60,6 +63,8 @@ const projects = {
 
         subtitle:
             "A playable 2D space shooter built with Unity.",
+        image:
+    "assets/projects/spacequest/hero.jpg",
 
         about:
             "A complete 2D space shooter featuring player movement, projectile-based combat, enemies, health systems, environmental obstacles, VFX and game-state UI. The project was deployed as a WebGL game.",
@@ -97,6 +102,9 @@ const projects = {
 
         subtitle:
             "A complete 2D mobile game with monetization.",
+        
+        image:
+    "assets/projects/skydash/hero.jpg",
 
         about:
             "A mobile-focused 2D Unity game featuring gameplay, scoring, UI and complete game flow. Integrated Google Mobile Ads for in-game monetization and tested the experience for mobile interaction.",
@@ -131,6 +139,9 @@ const projects = {
 
         subtitle:
             "A modular first-person horror experience.",
+           
+        image:
+    "assets/projects/horror/hero.jpg",    
 
         about:
             "A first-person horror game focused on exploration, environmental storytelling and reusable interaction systems. The project includes doors, switches, inspectable objects, flashlight interactions and atmospheric lighting.",
@@ -237,6 +248,32 @@ function openProject(projectId) {
         return;
 
     }
+    // =========================================
+// PROJECT IMAGE
+// =========================================
+
+const detailImage =
+    document.getElementById("detailImage");
+
+const visualPlaceholder =
+    document.querySelector(".visual-placeholder");
+
+
+if (project.image) {
+
+    detailImage.src = project.image;
+
+    detailImage.style.display = "block";
+
+    visualPlaceholder.style.display = "none";
+
+} else {
+
+    detailImage.style.display = "none";
+
+    visualPlaceholder.style.display = "flex";
+
+}
 
 
     document.getElementById("detailType").textContent =
