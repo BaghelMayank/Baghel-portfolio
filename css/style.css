@@ -348,3 +348,354 @@ body {
         justify-content: center;
     }
 }
+/* =========================================
+   LAB
+========================================= */
+
+.lab {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: #050505;
+
+    color: #ffffff;
+
+    display: none;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    padding: 30px 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #1c1c1c;
+
+}
+
+
+.logo {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+}
+
+
+.logo span {
+
+    color: #555;
+
+    font-weight: 400;
+
+}
+
+
+.nav-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #666;
+
+}
+
+
+.status-dot {
+
+    width: 7px;
+
+    height: 7px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px #ffffff;
+
+}
+
+
+/* =========================================
+   LAB HERO
+========================================= */
+
+.lab-hero {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    min-height: calc(100vh - 90px);
+
+    padding: 100px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.section-label {
+
+    color: #666;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.lab-hero h2 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(60px, 9vw, 130px);
+
+    line-height: 0.9;
+
+    letter-spacing: -6px;
+
+    font-weight: 900;
+
+    margin-bottom: 45px;
+
+}
+
+
+.lab-hero h2 span {
+
+    color: #555;
+
+}
+
+
+.lab-description {
+
+    max-width: 500px;
+
+    color: #777;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 40px;
+
+}
+
+
+.projects-button {
+
+    width: fit-content;
+
+    padding: 17px 25px;
+
+    background: transparent;
+
+    border: 1px solid #333;
+
+    color: white;
+
+    font-family: "Courier New", monospace;
+
+    letter-spacing: 3px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.projects-button span {
+
+    margin-left: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+.projects-button:hover {
+
+    background: white;
+
+    color: black;
+
+}
+
+
+.projects-button:hover span {
+
+    transform: translateY(5px);
+
+}
+
+
+/* =========================================
+   SCROLL INDICATOR
+========================================= */
+
+.scroll-indicator {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 50px;
+
+    z-index: 3;
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #444;
+
+}
+
+
+.scroll-indicator span {
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .nav-status {
+
+        font-size: 8px;
+
+    }
+
+
+    .lab-hero {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .lab-hero h2 {
+
+        font-size: 60px;
+
+        letter-spacing: -4px;
+
+    }
+
+
+    .lab-description {
+
+        font-size: 14px;
+
+    }
+
+
+    .scroll-indicator {
+
+        left: 20px;
+
+    }
+
+}
+/* =========================================
+   BOOT EXIT ANIMATION
+========================================= */
+
+.boot-exit {
+
+    animation: bootExit 0.7s ease forwards;
+
+}
+
+
+@keyframes bootExit {
+
+    0% {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform: scale(1.05);
+
+        filter: blur(10px);
+
+    }
+
+}

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +11,32 @@
 
     <meta
         name="description"
-        content="Baghel — Unity Game Developer building games, systems, simulations and interactive experiences."
+        content="Baghel — Unity Game Developer building games, systems and interactive experiences."
     >
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
-    <!-- ================================
+    <!-- =====================================
          BOOT SCREEN
-    ================================= -->
+    ====================================== -->
 
-    <main class="boot-screen">
+    <main id="bootScreen" class="boot-screen">
 
         <div class="boot-container">
 
             <div class="system-header">
+
                 <span class="system-dot"></span>
+
                 BAGHEL.DEV SYSTEM
+
             </div>
+
 
             <div class="terminal">
 
@@ -63,35 +71,136 @@
                     GAME DEVELOPER // CREATOR
                 </p>
 
+
                 <h1>
                     BAGHEL<span>.EXE</span>
                 </h1>
+
 
                 <p class="hero-description">
                     I build games, systems and interactive experiences
                     where code meets creativity.
                 </p>
 
+
                 <div class="tech-stack">
+
                     <span>UNITY</span>
                     <span>C#</span>
                     <span>3D</span>
                     <span>AR/XR</span>
                     <span>AI</span>
+
                 </div>
 
-                <button class="enter-button">
+
+                <button id="enterLabButton" class="enter-button">
+
                     ENTER THE LAB
+
                     <span>→</span>
+
                 </button>
 
             </section>
 
         </div>
 
+
         <div class="grid-background"></div>
 
     </main>
 
+
+
+    <!-- =====================================
+         DEVELOPMENT LAB
+    ====================================== -->
+
+    <main id="lab" class="lab">
+
+        <!-- NAVIGATION -->
+
+        <nav class="navbar">
+
+            <div class="logo">
+                BAGHEL<span>.EXE</span>
+            </div>
+
+
+            <div class="nav-status">
+
+                <span class="status-dot"></span>
+
+                SYSTEM ONLINE
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- HERO -->
+
+        <section class="lab-hero">
+
+            <p class="section-label">
+                // DEVELOPER PROFILE
+            </p>
+
+
+            <h2>
+                I BUILD
+                <br>
+
+                <span>GAMES.</span>
+
+                <br>
+
+                SYSTEMS.
+
+                <br>
+
+                <span>WEIRD THINGS.</span>
+            </h2>
+
+
+            <p class="lab-description">
+
+                Unity developer focused on gameplay systems,
+                interactive experiences, simulations and
+                experimental ideas.
+
+            </p>
+
+
+            <button class="projects-button">
+
+                VIEW PROJECTS
+
+                <span>↓</span>
+
+            </button>
+
+        </section>
+
+
+
+        <!-- SCROLL INDICATOR -->
+
+        <div class="scroll-indicator">
+
+            SCROLL TO EXPLORE
+
+            <span>↓</span>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
