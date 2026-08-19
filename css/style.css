@@ -1036,3 +1036,417 @@ body {
     }
 
 }
+/* =========================================
+   PROJECT DETAIL
+========================================= */
+
+.project-detail {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    width: 100%;
+
+    height: 100vh;
+
+    background: #050505;
+
+    overflow-y: auto;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease,
+        visibility 0.35s ease;
+
+}
+
+
+.project-detail.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.close-project {
+
+    position: fixed;
+
+    top: 30px;
+
+    left: 40px;
+
+    z-index: 10;
+
+    padding: 12px 18px;
+
+    background: rgba(5, 5, 5, 0.8);
+
+    border: 1px solid #333;
+
+    color: #aaa;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.close-project:hover {
+
+    background: #fff;
+
+    color: #000;
+
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.project-detail-container {
+
+    width: min(1200px, 90%);
+
+    margin: auto;
+
+    padding: 130px 0 100px;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.project-detail-header {
+
+    margin-bottom: 70px;
+
+}
+
+
+.project-detail-header h2 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(60px, 10vw, 140px);
+
+    line-height: 0.85;
+
+    letter-spacing: -7px;
+
+    font-weight: 900;
+
+    margin-bottom: 30px;
+
+}
+
+
+.project-detail-header h2 span {
+
+    color: #555;
+
+}
+
+
+.project-detail-header p:last-child {
+
+    max-width: 600px;
+
+    color: #777;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   VISUAL
+========================================= */
+
+.project-visual {
+
+    width: 100%;
+
+    height: 500px;
+
+    border: 1px solid #222;
+
+    margin-bottom: 80px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #0c0c0c,
+            #050505
+        );
+
+}
+
+
+.visual-placeholder {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 30px;
+
+    letter-spacing: 8px;
+
+    color: #222;
+
+}
+
+
+.visual-placeholder span {
+
+    color: #555;
+
+}
+
+
+/* =========================================
+   INFORMATION
+========================================= */
+
+.project-information {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 80px;
+
+}
+
+
+.detail-block {
+
+    margin-bottom: 60px;
+
+}
+
+
+.detail-label {
+
+    color: #555;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.detail-block > p:not(.detail-label) {
+
+    max-width: 650px;
+
+    color: #888;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   TECH
+========================================= */
+
+.detail-tech {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+
+.detail-tech span {
+
+    border: 1px solid #222;
+
+    padding: 8px 12px;
+
+    color: #777;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   CONTRIBUTIONS
+========================================= */
+
+#detailContributions {
+
+    list-style: none;
+
+}
+
+
+#detailContributions li {
+
+    color: #888;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+}
+
+
+#detailContributions li::before {
+
+    content: "→ ";
+
+    color: #555;
+
+}
+
+
+/* =========================================
+   LINK
+========================================= */
+
+.project-links {
+
+    margin-top: 30px;
+
+}
+
+
+.detail-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 17px 25px;
+
+    border: 1px solid #444;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    transition: 0.3s;
+
+}
+
+
+.detail-link:hover {
+
+    background: white;
+
+    color: black;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .close-project {
+
+        top: 20px;
+
+        left: 20px;
+
+    }
+
+
+    .project-detail-container {
+
+        width: 90%;
+
+        padding-top: 100px;
+
+    }
+
+
+    .project-detail-header h2 {
+
+        font-size: 55px;
+
+        letter-spacing: -4px;
+
+    }
+
+
+    .project-visual {
+
+        height: 300px;
+
+    }
+
+
+    .project-information {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+}

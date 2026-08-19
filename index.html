@@ -172,13 +172,13 @@
             </p>
 
 
-           <button id="viewProjectsButton" class="projects-button">
+            <button id="viewProjectsButton" class="projects-button">
 
-    VIEW PROJECTS
+                VIEW PROJECTS
 
-    <span>↓</span>
+                <span>↓</span>
 
-</button>
+            </button>
 
         </section>
 
@@ -224,7 +224,7 @@
              PROJECT 01
         ================================== -->
 
-                <article class="project-card">
+                <article class="project-card" data-project="particlefx">
 
                     <div class="project-number">
                         01
@@ -260,7 +260,7 @@
 
                         </div>
 
-                        <button class="project-button">
+                        <button class="project-button" data-project="particlefx">
 
                             VIEW PROJECT
 
@@ -278,7 +278,7 @@
              PROJECT 02
         ================================== -->
 
-                <article class="project-card">
+                <article class="project-card" data-project="spacequest">
 
                     <div class="project-number">
                         02
@@ -313,7 +313,7 @@
 
                         </div>
 
-                        <button class="project-button">
+                        <button class="project-button" data-project="spacequest">
 
                             VIEW PROJECT
 
@@ -331,7 +331,7 @@
              PROJECT 03
         ================================== -->
 
-                <article class="project-card">
+                <article class="project-card" data-project="skydash">
 
                     <div class="project-number">
                         03
@@ -365,7 +365,7 @@
 
                         </div>
 
-                        <button class="project-button">
+                        <button class="project-button" data-project="skydash">
 
                             VIEW PROJECT
 
@@ -383,7 +383,7 @@
              PROJECT 04
         ================================== -->
 
-                <article class="project-card">
+                <article class="project-card" data-project="horror">
 
                     <div class="project-number">
                         04
@@ -418,18 +418,133 @@
 
                         </div>
 
-                        <button class="project-button">
+                        <button class="project-button" data-project="horror">
 
-    VIEW PROJECT
+                            VIEW PROJECT
 
-    <span>→</span>
+                            <span>→</span>
 
-</button>
+                        </button>
 
                     </div>
 
                 </article>
 
+
+            </div>
+
+        </section>
+        <!-- =====================================
+     PROJECT DETAIL
+====================================== -->
+
+        <section id="projectDetail" class="project-detail">
+
+            <button id="closeProject" class="close-project">
+
+                ← BACK TO PROJECTS
+
+            </button>
+
+
+            <div class="project-detail-container">
+
+
+                <!-- PROJECT HEADER -->
+
+                <div class="project-detail-header">
+
+                    <p id="detailType" class="section-label">
+                        // PROJECT
+                    </p>
+
+                    <h2 id="detailTitle">
+                        PROJECT TITLE
+                    </h2>
+
+                    <p id="detailSubtitle">
+                        PROJECT DESCRIPTION
+                    </p>
+
+                </div>
+
+
+                <!-- PROJECT VISUAL -->
+
+                <div class="project-visual">
+
+                    <div class="visual-placeholder">
+
+                        PROJECT
+                        <span>VISUAL</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT INFORMATION -->
+
+                <div class="project-information">
+
+
+                    <div class="detail-block">
+
+                        <p class="detail-label">
+                            // ABOUT
+                        </p>
+
+                        <p id="detailAbout">
+                            Project information goes here.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="detail-block">
+
+                        <p class="detail-label">
+                            // TECHNOLOGY
+                        </p>
+
+                        <div id="detailTech" class="detail-tech">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="detail-block">
+
+                        <p class="detail-label">
+                            // MY CONTRIBUTION
+                        </p>
+
+                        <ul id="detailContributions">
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- PROJECT LINK -->
+
+                <div class="project-links">
+
+                    <a id="detailLink" href="#" target="_blank" rel="noopener noreferrer" class="detail-link">
+
+                        <span id="detailLinkText">
+                            OPEN PROJECT
+                        </span>
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
 
             </div>
 
