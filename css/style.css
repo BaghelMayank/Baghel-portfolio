@@ -171,6 +171,17 @@ body {
 
     margin-bottom: 15px;
 }
+.hero-build {
+
+    margin-left: 10px;
+
+    padding-left: 10px;
+
+    border-left: 1px solid #333;
+
+    color: #444;
+
+}
 
 
 /* =========================================
@@ -855,17 +866,13 @@ body {
 ========================================= */
 
 .project-content {
-
     position: relative;
-
     z-index: 2;
 
-    height: 100%;
+    flex: 1;
 
     display: flex;
-
     flex-direction: column;
-
 }
 
 
@@ -1206,14 +1213,73 @@ body {
 
     margin-bottom: 80px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #0c0c0c,
-            #050505
-        );
-
     overflow: hidden;
+
+    background: #080808;
+
+}
+
+
+.project-visual img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter: grayscale(100%);
+
+    opacity: 0.75;
+
+    transition: 0.5s;
+
+}
+
+
+.project-visual:hover img {
+
+    filter: grayscale(0%);
+
+    opacity: 1;
+
+    transform: scale(1.03);
+
+}
+
+
+.visual-overlay {
+
+    position: absolute;
+
+    inset: auto 20px 20px 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    pointer-events: none;
+
+}
+
+
+.visual-overlay span {
+
+    padding: 8px 12px;
+
+    background: rgba(5,5,5,0.85);
+
+    border: 1px solid #333;
+
+    color: #aaa;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
 
 }
 /* =========================================
@@ -1476,6 +1542,1464 @@ body {
         grid-template-columns: 1fr;
 
         gap: 20px;
+
+    }
+
+}
+/* =========================================
+   GAME DEV HERO
+========================================= */
+
+.hero-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: fit-content;
+
+    margin-bottom: 30px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #222;
+
+    color: #666;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+.hero-status .status-dot {
+
+    width: 6px;
+    height: 6px;
+
+    background: #fff;
+
+    box-shadow: 0 0 12px #fff;
+
+}
+
+
+/* =========================================
+   DEVELOPER STATS
+========================================= */
+
+.developer-stats {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.dev-stat {
+
+    min-width: 130px;
+
+    padding: 15px 18px;
+
+    border: 1px solid #222;
+
+    background: #080808;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+
+.dev-stat strong {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+}
+
+
+.dev-stat span {
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #555;
+
+}
+
+
+@media (max-width: 600px) {
+
+    .developer-stats {
+
+        flex-wrap: wrap;
+
+    }
+
+    .dev-stat {
+
+        min-width: 105px;
+
+    }
+
+}
+.projects-intro {
+
+    max-width: 500px;
+
+    margin-top: 30px;
+
+    color: #555;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    line-height: 1.8;
+
+}
+/* =========================================
+   GAME BUILD CARDS
+========================================= */
+
+.project-card {
+    min-height: 700px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0b0b0b,
+            #060606
+        );
+
+    border: 1px solid #1c1c1c;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.project-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #555;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.5);
+
+}
+
+
+/* =========================================
+   BUILD HEADER
+========================================= */
+
+.build-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.build-id {
+
+    color: #444;
+
+}
+
+
+.build-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #666;
+
+}
+
+
+.build-status i {
+
+    width: 6px;
+
+    height: 6px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: #777;
+
+    box-shadow: 0 0 8px #777;
+
+}
+
+
+.build-status.playable i {
+
+    background: #fff;
+
+    box-shadow: 0 0 10px #fff;
+
+}
+
+
+.build-status.wip i {
+
+    background: #888;
+
+    box-shadow: 0 0 8px #888;
+
+}
+
+
+/* =========================================
+   MINI GAMEPLAY PREVIEW
+========================================= */
+
+.project-visual-mini {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 260px;
+
+    overflow: hidden;
+
+    border: 1px solid #222;
+
+    background: #030303;
+
+    margin-bottom: 30px;
+}
+
+
+.project-visual-mini img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter: grayscale(100%);
+
+    opacity: 0.55;
+
+    transform: scale(1.02);
+
+    transition:
+        filter 0.5s ease,
+        opacity 0.5s ease,
+        transform 0.6s ease;
+
+}
+
+
+.project-card:hover .project-visual-mini img {
+
+    filter: grayscale(0%);
+
+    opacity: 0.9;
+
+    transform: scale(1.06);
+
+}
+
+
+/* =========================================
+   SCANLINE
+========================================= */
+
+.scanline {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            transparent 0px,
+            transparent 3px,
+            rgba(255,255,255,0.025) 4px
+        );
+
+    opacity: 0.5;
+
+}
+
+
+/* =========================================
+   VISUAL HUD
+========================================= */
+
+.visual-hud {
+
+    position: absolute;
+
+    left: 12px;
+
+    right: 12px;
+
+    bottom: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    pointer-events: none;
+
+}
+
+
+.visual-hud span {
+
+    padding: 7px 9px;
+
+    background: rgba(0,0,0,0.75);
+
+    border: 1px solid #333;
+
+    color: #777;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.project-content {
+
+    flex: 1;
+
+}
+
+
+.project-type {
+
+    margin-bottom: 20px;
+
+}
+
+
+.project-content h4 {
+
+    font-size: clamp(42px, 4vw, 58px);
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================
+   BUILD DATA
+========================================= */
+
+.build-data {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-top: 1px solid #1c1c1c;
+
+    border-bottom: 1px solid #1c1c1c;
+
+    margin-bottom: 20px;
+
+}
+
+
+.build-data div {
+
+    padding: 13px 10px;
+
+    border-right: 1px solid #1c1c1c;
+
+}
+
+
+.build-data div:last-child {
+
+    border-right: none;
+
+}
+
+
+.build-data span {
+
+    display: block;
+
+    color: #444;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.build-data strong {
+
+    color: #888;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================
+   PROJECT TECH
+========================================= */
+
+.project-tech {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.project-button {
+
+    margin-top: 25px;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .project-card {
+
+        min-height: auto;
+
+    }
+
+
+    .project-visual-mini {
+
+        height: 220px;
+
+    }
+
+
+    .build-data div {
+
+        padding: 12px 7px;
+
+    }
+
+
+    .build-data strong {
+
+        font-size: 8px;
+
+    }
+
+}
+/* =========================================
+   GAME DEV VISUAL LAYER
+========================================= */
+
+.game-hud {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 50;
+
+    pointer-events: none;
+
+    font-family: "Courier New", monospace;
+
+    color: #555;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   HUD CORNERS
+========================================= */
+
+.hud-corner {
+
+    position: absolute;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    opacity: 0.65;
+
+    transition: opacity 0.3s ease;
+
+}
+
+
+.hud-top-left {
+
+    top: 110px;
+
+    left: 25px;
+
+}
+
+
+.hud-top-right {
+
+    top: 110px;
+
+    right: 25px;
+
+}
+
+
+.hud-bottom-left {
+
+    bottom: 25px;
+
+    left: 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 4px;
+
+}
+
+
+.hud-bottom-right {
+
+    bottom: 25px;
+
+    right: 25px;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 4px;
+
+}
+
+
+/* =========================================
+   HUD LINE
+========================================= */
+
+.hud-line {
+
+    display: block;
+
+    width: 25px;
+
+    height: 1px;
+
+    background: #444;
+
+}
+
+
+/* =========================================
+   ONLINE INDICATOR
+========================================= */
+
+.hud-online {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+}
+
+
+.hud-online i {
+
+    display: block;
+
+    width: 5px;
+
+    height: 5px;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 8px #fff;
+
+    animation: hudPulse 2s infinite;
+
+}
+
+
+@keyframes hudPulse {
+
+    0%,
+    100% {
+
+        opacity: 0.35;
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* =========================================
+   CENTER CROSSHAIR
+========================================= */
+
+.hud-crosshair {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 24px;
+
+    height: 24px;
+
+    transform: translate(-50%, -50%);
+
+    opacity: 0.12;
+
+}
+
+
+.crosshair-horizontal {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: -10px;
+
+    width: 44px;
+
+    height: 1px;
+
+    background: #fff;
+
+}
+
+
+.crosshair-vertical {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: -10px;
+
+    width: 1px;
+
+    height: 44px;
+
+    background: #fff;
+
+}
+
+
+.crosshair-dot {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 3px;
+
+    height: 3px;
+
+    transform: translate(-50%, -50%);
+
+    background: #fff;
+
+}
+
+
+/* =========================================
+   SCANLINE
+========================================= */
+
+.screen-scanline {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 49;
+
+    pointer-events: none;
+
+    opacity: 0.025;
+
+    background:
+
+        repeating-linear-gradient(
+
+            to bottom,
+
+            transparent 0px,
+
+            transparent 3px,
+
+            rgba(255,255,255,0.8) 4px
+
+        );
+
+}
+
+
+/* =========================================
+   HUD CORNER MARKERS
+========================================= */
+
+.hud-corner::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+
+    height: 5px;
+
+    border-top: 1px solid #444;
+
+    border-left: 1px solid #444;
+
+    left: -8px;
+
+    top: -5px;
+
+}
+
+
+/* =========================================
+   DESKTOP HOVER
+========================================= */
+
+.lab:hover .hud-corner {
+
+    opacity: 0.9;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .hud-top-left {
+
+        top: 90px;
+
+        left: 12px;
+
+    }
+
+    .hud-top-right {
+
+        top: 90px;
+
+        right: 12px;
+
+    }
+
+    .hud-bottom-left {
+
+        bottom: 12px;
+
+        left: 12px;
+
+    }
+
+    .hud-bottom-right {
+
+        bottom: 12px;
+
+        right: 12px;
+
+    }
+
+    .hud-corner {
+
+        font-size: 7px;
+
+        letter-spacing: 1px;
+
+    }
+
+    .hud-crosshair {
+
+        display: none;
+
+    }
+
+    .screen-scanline {
+
+        opacity: 0.015;
+
+    }
+
+}
+/* =========================================
+   PROJECT ARCHIVE TELEMETRY
+========================================= */
+
+.archive-telemetry {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 35px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #151515;
+
+    color: #444;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.archive-telemetry span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.archive-telemetry i {
+
+    width: 5px;
+
+    height: 5px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: #777;
+
+    box-shadow: 0 0 7px #777;
+
+}
+
+
+@media (max-width: 700px) {
+
+    .archive-telemetry {
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+        flex-direction: column;
+
+    }
+
+}
+/* =========================================
+   PROJECT CARD HUD
+========================================= */
+
+.project-card::after {
+
+    content: "PLAYABLE_BUILD";
+
+    position: absolute;
+
+    bottom: 18px;
+
+    right: 20px;
+
+    color: #292929;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    pointer-events: none;
+
+    transition: color 0.3s ease;
+
+}
+
+
+.project-card:hover::after {
+
+    color: #666;
+
+}
+/* =========================================
+   
+   PROJECT BUILD HUD
+========================================= */
+
+.project-build-hud {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+
+    margin-bottom: 70px;
+
+}
+
+.build-hud-item {
+
+    padding: 20px;
+
+    border-right: 1px solid #222;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+.build-hud-item:last-child {
+
+    border-right: none;
+
+}
+
+.build-hud-label {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #444;
+
+}
+
+.build-hud-value {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #ddd;
+
+}
+
+
+.build-hud-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.build-hud-status i {
+
+    width: 6px;
+    height: 6px;
+
+    display: inline-block;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px #fff;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .project-build-hud {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .build-hud-item:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+    .build-hud-item {
+
+        border-bottom: 1px solid #222;
+
+    }
+
+}
+/* =========================================
+   STEP 3C
+   GAMEPLAY SYSTEMS
+========================================= */
+
+.gameplay-systems {
+
+    margin-top: 80px;
+
+    padding-top: 70px;
+
+    border-top: 1px solid #222;
+
+}
+
+.systems-header {
+
+    margin-bottom: 40px;
+
+}
+
+.systems-header .detail-label {
+
+    margin-bottom: 15px;
+
+}
+
+.systems-header h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(40px, 6vw, 80px);
+
+    line-height: 0.9;
+
+    letter-spacing: -4px;
+
+    font-weight: 900;
+
+}
+
+.systems-header h3 span {
+
+    color: #555;
+
+}
+
+
+.systems-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1px;
+
+    background: #222;
+
+    border: 1px solid #222;
+
+}
+
+
+.system-card {
+
+    min-height: 170px;
+
+    padding: 25px;
+
+    background: #080808;
+
+    transition: 0.3s;
+
+}
+
+
+.system-card:hover {
+
+    background: #0d0d0d;
+
+}
+
+
+.system-index {
+
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #444;
+
+}
+
+
+.system-card h4 {
+
+    margin-bottom: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+
+    color: #ddd;
+
+}
+
+
+.system-card p {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #666;
+
+}
+
+
+@media (max-width: 700px) {
+
+    .systems-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+/* =========================================
+   STEP 3D
+   DEVELOPMENT BREAKDOWN
+========================================= */
+
+.development-breakdown {
+
+    margin-top: 100px;
+
+    padding-top: 70px;
+
+    border-top: 1px solid #222;
+
+}
+
+
+.breakdown-header {
+
+    margin-bottom: 50px;
+
+}
+
+
+.breakdown-header h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(40px, 6vw, 80px);
+
+    line-height: 0.9;
+
+    letter-spacing: -4px;
+
+    font-weight: 900;
+
+}
+
+
+.breakdown-header h3 span {
+
+    color: #555;
+
+}
+
+
+.breakdown-list {
+
+    border-top: 1px solid #222;
+
+}
+
+
+.breakdown-item {
+
+    display: grid;
+
+    grid-template-columns: 80px 1fr 2fr;
+
+    gap: 30px;
+
+    align-items: center;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #222;
+
+}
+
+
+.breakdown-number {
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #444;
+
+}
+
+
+.breakdown-title {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #ddd;
+
+}
+
+
+.breakdown-description {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #666;
+
+}
+
+
+@media (max-width: 700px) {
+
+    .breakdown-item {
+
+        grid-template-columns: 40px 1fr;
+
+        gap: 15px;
+
+    }
+
+    .breakdown-description {
+
+        grid-column: 2;
+
+    }
+
+}
+/* =========================================
+   STEP 3E
+   PLAYABLE BUILD CTA
+========================================= */
+
+.playable-build {
+
+    margin-top: 100px;
+
+    padding: 50px;
+
+    border: 1px solid #333;
+
+    background: #080808;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.playable-build::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 3px;
+    height: 100%;
+
+    background: #fff;
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+
+}
+
+
+.playable-build-label {
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #555;
+
+    margin-bottom: 20px;
+
+}
+
+
+.playable-build h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(35px, 5vw, 65px);
+
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.playable-build h3 span {
+
+    color: #555;
+
+}
+
+
+.playable-build p {
+
+    max-width: 550px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #666;
+
+    margin-bottom: 30px;
+
+}
+
+
+.playable-build .detail-link {
+
+    border-color: #555;
+
+}
+
+
+.playable-build .detail-link:hover {
+
+    border-color: white;
+
+}
+
+
+@media (max-width: 700px) {
+
+    .playable-build {
+
+        padding: 30px;
 
     }
 

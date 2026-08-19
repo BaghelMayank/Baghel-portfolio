@@ -116,6 +116,50 @@
     ====================================== -->
 
     <main id="lab" class="lab">
+        
+        <!-- GAME DEV HUD -->
+<div class="game-hud">
+
+    <div class="hud-corner hud-top-left">
+        <span class="hud-line"></span>
+        <span>BUILD_042</span>
+    </div>
+
+    <div class="hud-corner hud-top-right">
+        <span>UNITY_6</span>
+        <span class="hud-online">
+            <i></i> ONLINE
+        </span>
+    </div>
+
+    <div class="hud-corner hud-bottom-left">
+        <span>X: 042.18</span>
+        <span>Y: 018.72</span>
+        <span>Z: 091.04</span>
+    </div>
+
+    <div class="hud-corner hud-bottom-right">
+        <span>PLAYER_01</span>
+        <span>FPS: 144</span>
+    </div>
+
+    <!-- CENTER CROSSHAIR -->
+
+    <div class="hud-crosshair">
+
+        <span class="crosshair-horizontal"></span>
+        <span class="crosshair-vertical"></span>
+
+        <span class="crosshair-dot"></span>
+
+    </div>
+
+</div>
+
+
+<!-- SCREEN SCANLINE -->
+
+<div class="screen-scanline"></div>
 
         <!-- NAVIGATION -->
 
@@ -142,45 +186,65 @@
 
         <section class="lab-hero">
 
-            <p class="section-label">
-                // DEVELOPER PROFILE
-            </p>
+    <div class="hero-status">
 
+    <span class="status-dot"></span>
 
-            <h2>
-                I BUILD
-                <br>
+    UNITY DEVELOPER // GAMEPLAY PROGRAMMER
 
-                <span>GAMES.</span>
+    <span class="hero-build">
+        BUILD_READY
+    </span>
 
-                <br>
+</div>
 
-                SYSTEMS.
+    <p class="section-label">
+        // PLAYER_ONE.DEVELOPER_PROFILE
+    </p>
 
-                <br>
+    <h2>
+        I DON'T JUST
+        <br>
+        <span>WRITE CODE.</span>
+        <br>
+        I BUILD
+        <br>
+        <span>WORLDS.</span>
+    </h2>
 
-                <span>WEIRD THINGS.</span>
-            </h2>
+    <p class="lab-description">
+        Unity developer building gameplay systems, interactive
+        experiences, simulations and games with C#.
+    </p>
 
+    <div class="developer-stats">
 
-            <p class="lab-description">
+        <div class="dev-stat">
+            <strong>3+</strong>
+            <span>YEARS UNITY</span>
+        </div>
 
-                Unity developer focused on gameplay systems,
-                interactive experiences, simulations and
-                experimental ideas.
+        <div class="dev-stat">
+            <strong>10+</strong>
+            <span>AR EXPERIENCES</span>
+        </div>
 
-            </p>
+        <div class="dev-stat">
+            <strong>4</strong>
+            <span>FEATURED BUILDS</span>
+        </div>
 
+    </div>
 
-            <button id="viewProjectsButton" class="projects-button">
+    <button id="viewProjectsButton" class="projects-button">
 
-                VIEW PROJECTS
+        EXPLORE MY BUILDS
 
-                <span>↓</span>
+        <span>↓</span>
 
-            </button>
+    </button>
 
-        </section>
+</section>
 
 
 
@@ -199,6 +263,22 @@
 
         <section id="projects" class="projects-section">
 
+            <div class="archive-telemetry">
+
+    <span>
+        <i></i>
+        PROJECT_DATABASE
+    </span>
+
+    <span>
+        BUILDS: 04
+    </span>
+
+    <span>
+        STATUS: ACTIVE
+    </span>
+
+</div>
             <!-- PROJECTS HEADER -->
 
             <div class="projects-header">
@@ -212,7 +292,7 @@
                     <span>ARCHIVE.</span>
                 </h3>
                 <p class="projects-intro">
-    PLAYABLE BUILDS // EXPERIMENTS // SYSTEMS // WORLDS
+    PLAYABLE BUILDS // EXPERIMENTS // SYSTEMS // TOOLS FOR OTHER DEVELOPERS
 </p>
 
             </div>
@@ -227,211 +307,376 @@
              PROJECT 01
         ================================== -->
 
-                <article class="project-card" data-project="particlefx">
+               <!-- =================================
+     PROJECT 01
+================================= -->
 
-                    <div class="project-number">
-                        01
-                    </div>
+<article class="project-card" data-project="particlefx">
 
-                    <div class="project-content">
+    <div class="build-header">
 
-                        <p class="project-type">
-                            TOOL // UNITY ASSET STORE
-                        </p>
+        <span class="build-id">BUILD_01</span>
 
-                        <h4>
-                            CUSTOM
-                            <span>PARTICLE FX</span>
-                        </h4>
+        <span class="build-status">
+            <i></i> TOOL
+        </span>
 
-                        <p class="project-description">
+    </div>
 
-                            A reusable 2D sprite-based particle
-                            effects tool built for Unity developers,
-                            designed for creating dynamic effects
-                            directly inside the Unity editor.
+    <div class="project-visual-mini">
 
-                        </p>
+        <img
+            src="assets/projects/particlefx/hero.png"
+            alt="Custom Particle FX Tool"
+        >
 
-                        <div class="project-tech">
+        <div class="scanline"></div>
 
-                            <span>UNITY</span>
-                            <span>C#</span>
-                            <span>PARTICLES</span>
-                            <span>URP</span>
-                            <span>HDRP</span>
+        <div class="visual-hud">
 
-                        </div>
+            <span>UNITY EDITOR</span>
+            <span>TOOL_BUILD</span>
 
-                        <button class="project-button" data-project="particlefx">
+        </div>
 
-                            VIEW PROJECT
+    </div>
 
-                            <span>→</span>
+    <div class="project-content">
 
-                        </button>
+        <p class="project-type">
+            UNITY TOOL // GAME DEVELOPMENT
+        </p>
 
-                    </div>
+        <h4>
+            CUSTOM
+            <span>PARTICLE FX</span>
+        </h4>
 
-                </article>
+        <p class="project-description">
 
+            Reusable 2D particle effects system designed
+            for building dynamic gameplay VFX directly
+            inside Unity.
 
+        </p>
 
-                <!-- =================================
-             PROJECT 02
-        ================================== -->
+        <div class="build-data">
 
-                <article class="project-card" data-project="spacequest">
+            <div>
+                <span>ENGINE</span>
+                <strong>UNITY</strong>
+            </div>
 
-                    <div class="project-number">
-                        02
-                    </div>
+            <div>
+                <span>LANGUAGE</span>
+                <strong>C#</strong>
+            </div>
 
-                    <div class="project-content">
+            <div>
+                <span>TYPE</span>
+                <strong>TOOL</strong>
+            </div>
 
-                        <p class="project-type">
-                            GAME // 2D
-                        </p>
+        </div>
 
-                        <h4>
-                            SPACE
-                            <span>QUEST</span>
-                        </h4>
+        <div class="project-tech">
 
-                        <p class="project-description">
+            <span>PARTICLES</span>
+            <span>URP</span>
+            <span>HDRP</span>
 
-                            A playable 2D space shooter featuring
-                            player movement, projectile combat,
-                            enemies, health systems, environmental
-                            obstacles and VFX.
+        </div>
 
-                        </p>
+        <button class="project-button" data-project="particlefx">
 
-                        <div class="project-tech">
+            OPEN BUILD
 
-                            <span>UNITY</span>
-                            <span>C#</span>
-                            <span>2D</span>
-                            <span>WEBGL</span>
+            <span>→</span>
 
-                        </div>
+        </button>
 
-                        <button class="project-button" data-project="spacequest">
+    </div>
 
-                            VIEW PROJECT
+</article>
 
-                            <span>→</span>
 
-                        </button>
+<!-- =================================
+     PROJECT 02
+================================= -->
 
-                    </div>
+<article class="project-card" data-project="spacequest">
 
-                </article>
+    <div class="build-header">
 
+        <span class="build-id">BUILD_02</span>
 
+        <span class="build-status playable">
+            <i></i> PLAYABLE
+        </span>
 
-                <!-- =================================
-             PROJECT 03
-        ================================== -->
+    </div>
 
-                <article class="project-card" data-project="skydash">
+    <div class="project-visual-mini">
 
-                    <div class="project-number">
-                        03
-                    </div>
+        <img
+            src="assets/projects/spacequest/hero.jpg"
+            alt="SpaceQuest"
+        >
 
-                    <div class="project-content">
+        <div class="scanline"></div>
 
-                        <p class="project-type">
-                            GAME // MOBILE
-                        </p>
+        <div class="visual-hud">
 
-                        <h4>
-                            SKY
-                            <span>DASH</span>
-                        </h4>
+            <span>WEBGL BUILD</span>
+            <span>60 FPS</span>
 
-                        <p class="project-description">
+        </div>
 
-                            A complete 2D mobile game focused on
-                            gameplay, scoring, UI and mobile-oriented
-                            game flow with integrated monetization.
+    </div>
 
-                        </p>
+    <div class="project-content">
 
-                        <div class="project-tech">
+        <p class="project-type">
+            GAME // 2D // SPACE SHOOTER
+        </p>
 
-                            <span>UNITY</span>
-                            <span>C#</span>
-                            <span>2D</span>
-                            <span>ADMOB</span>
+        <h4>
+            SPACE
+            <span>QUEST</span>
+        </h4>
 
-                        </div>
+        <p class="project-description">
 
-                        <button class="project-button" data-project="skydash">
+            A playable 2D space shooter featuring
+            movement, projectile combat, enemies,
+            health systems and gameplay VFX.
 
-                            VIEW PROJECT
+        </p>
 
-                            <span>→</span>
+        <div class="build-data">
 
-                        </button>
+            <div>
+                <span>ENGINE</span>
+                <strong>UNITY</strong>
+            </div>
 
-                    </div>
+            <div>
+                <span>LANGUAGE</span>
+                <strong>C#</strong>
+            </div>
 
-                </article>
+            <div>
+                <span>PLATFORM</span>
+                <strong>WEBGL</strong>
+            </div>
 
+        </div>
 
+        <div class="project-tech">
 
-                <!-- =================================
-             PROJECT 04
-        ================================== -->
+            <span>GAMEPLAY</span>
+            <span>COMBAT</span>
+            <span>VFX</span>
 
-                <article class="project-card" data-project="horror">
+        </div>
 
-                    <div class="project-number">
-                        04
-                    </div>
+        <button class="project-button" data-project="spacequest">
 
-                    <div class="project-content">
+            OPEN BUILD
 
-                        <p class="project-type">
-                            GAME // WORK IN PROGRESS
-                        </p>
+            <span>→</span>
 
-                        <h4>
-                            FIRST
-                            <span>PERSON HORROR</span>
-                        </h4>
+        </button>
 
-                        <p class="project-description">
+    </div>
 
-                            A first-person horror experience built
-                            around exploration, environmental
-                            interactions, object inspection and
-                            atmospheric gameplay.
+</article>
 
-                        </p>
 
-                        <div class="project-tech">
+<!-- =================================
+     PROJECT 03
+================================= -->
 
-                            <span>UNITY</span>
-                            <span>C#</span>
-                            <span>3D</span>
-                            <span>URP</span>
+<article class="project-card" data-project="skydash">
 
-                        </div>
+    <div class="build-header">
 
-                        <button class="project-button" data-project="horror">
+        <span class="build-id">BUILD_03</span>
 
-                            VIEW PROJECT
+        <span class="build-status playable">
+            <i></i> MOBILE
+        </span>
 
-                            <span>→</span>
+    </div>
 
-                        </button>
+    <div class="project-visual-mini">
 
-                    </div>
+        <img
+            src="assets/projects/skydash/hero.jpg"
+            alt="SkyDash"
+        >
 
-                </article>
+        <div class="scanline"></div>
+
+        <div class="visual-hud">
+
+            <span>MOBILE BUILD</span>
+            <span>ANDROID</span>
+
+        </div>
+
+    </div>
+
+    <div class="project-content">
+
+        <p class="project-type">
+            GAME // 2D // MOBILE
+        </p>
+
+        <h4>
+            SKY
+            <span>DASH</span>
+        </h4>
+
+        <p class="project-description">
+
+            A complete mobile game focused on
+            gameplay flow, scoring, UI systems
+            and monetization.
+
+        </p>
+
+        <div class="build-data">
+
+            <div>
+                <span>ENGINE</span>
+                <strong>UNITY</strong>
+            </div>
+
+            <div>
+                <span>LANGUAGE</span>
+                <strong>C#</strong>
+            </div>
+
+            <div>
+                <span>PLATFORM</span>
+                <strong>MOBILE</strong>
+            </div>
+
+        </div>
+
+        <div class="project-tech">
+
+            <span>GAMEPLAY</span>
+            <span>UI</span>
+            <span>ADMOB</span>
+
+        </div>
+
+        <button class="project-button" data-project="skydash">
+
+            OPEN BUILD
+
+            <span>→</span>
+
+        </button>
+
+    </div>
+
+</article>
+
+
+<!-- =================================
+     PROJECT 04
+================================= -->
+
+<article class="project-card" data-project="horror">
+
+    <div class="build-header">
+
+        <span class="build-id">BUILD_04</span>
+
+        <span class="build-status wip">
+            <i></i> IN DEVELOPMENT
+        </span>
+
+    </div>
+
+    <div class="project-visual-mini">
+
+        <img
+            src="assets/projects/horror/hero.jpg"
+            alt="First Person Horror"
+        >
+
+        <div class="scanline"></div>
+
+        <div class="visual-hud">
+
+            <span>UNITY 3D</span>
+            <span>WIP_BUILD</span>
+
+        </div>
+
+    </div>
+
+    <div class="project-content">
+
+        <p class="project-type">
+            GAME // 3D // FIRST PERSON HORROR
+        </p>
+
+        <h4>
+            FIRST
+            <span>PERSON HORROR</span>
+        </h4>
+
+        <p class="project-description">
+
+            A first-person horror experience built
+            around exploration, environmental
+            interactions and atmospheric gameplay.
+
+        </p>
+
+        <div class="build-data">
+
+            <div>
+                <span>ENGINE</span>
+                <strong>UNITY</strong>
+            </div>
+
+            <div>
+                <span>LANGUAGE</span>
+                <strong>C#</strong>
+            </div>
+
+            <div>
+                <span>RENDER</span>
+                <strong>URP</strong>
+            </div>
+
+        </div>
+
+        <div class="project-tech">
+
+            <span>FPS</span>
+            <span>INTERACTION</span>
+            <span>LIGHTING</span>
+
+        </div>
+
+        <button class="project-button" data-project="horror">
+
+            OPEN BUILD
+
+            <span>→</span>
+
+        </button>
+
+    </div>
+
+</article>
 
 
             </div>
@@ -441,119 +686,407 @@
      PROJECT DETAIL
 ====================================== -->
 
-        <section id="projectDetail" class="project-detail">
+       <!-- =====================================
+     PROJECT DETAIL / BUILD CASE STUDY
+====================================== -->
 
-            <button id="closeProject" class="close-project">
+<section id="projectDetail" class="project-detail">
 
-                ← BACK TO PROJECTS
+    <!-- BACK -->
 
-            </button>
+    <button id="closeProject" class="close-project">
+        ← BACK TO ARCHIVE
+    </button>
 
 
-            <div class="project-detail-container">
+    <div class="project-detail-container">
 
 
-                <!-- PROJECT HEADER -->
+        <!-- =================================
+             BUILD HEADER
+        ================================== -->
 
-                <div class="project-detail-header">
+        <header class="project-detail-header">
 
-                    <p id="detailType" class="section-label">
-                        // PROJECT
-                    </p>
+            <div class="detail-build-meta">
 
-                    <h2 id="detailTitle">
-                        PROJECT TITLE
-                    </h2>
+                <span id="detailBuildId">
+                    BUILD_01
+                </span>
 
-                    <p id="detailSubtitle">
-                        PROJECT DESCRIPTION
-                    </p>
+                <span class="detail-meta-divider">
+                    //
+                </span>
+
+                <span id="detailBuildCategory">
+                    GAMEPLAY_BUILD
+                </span>
+
+                <span class="detail-meta-status">
+                    <i></i>
+                    <span id="detailBuildStatus">
+                        ACTIVE DEVELOPMENT
+                    </span>
+                </span>
+
+            </div>
+
+
+            <p id="detailType" class="section-label">
+                // GAME BUILD
+            </p>
+
+
+            <h2 id="detailTitle">
+                PROJECT TITLE
+            </h2>
+
+
+            <p id="detailSubtitle" class="detail-subtitle">
+                PROJECT DESCRIPTION
+            </p>
+
+        </header>
+
+
+
+        <!-- =================================
+             GAMEPLAY PREVIEW
+        ================================== -->
+
+        <div class="project-visual">
+
+            <img
+                id="detailImage"
+                src=""
+                alt="Project gameplay preview"
+            >
+
+
+            <!-- GAME HUD -->
+
+            <div class="detail-visual-hud">
+
+                <div class="detail-hud-top">
+
+                    <span id="detailVisualBuild">
+                        BUILD_01
+                    </span>
+
+                    <span>
+                        GAMEPLAY_CAPTURE
+                    </span>
 
                 </div>
 
 
-                <!-- PROJECT VISUAL -->
+                <div class="detail-hud-bottom">
 
-                <div class="project-visual">
+                    <span id="detailVisualEngine">
+                        UNITY
+                    </span>
 
-                    <img id="detailImage" src="" alt="Project Preview">
-
-                    <div class="visual-placeholder">
-
-                        PROJECT
-                        <span>VISUAL</span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROJECT INFORMATION -->
-
-                <div class="project-information">
-
-
-                    <div class="detail-block">
-
-                        <p class="detail-label">
-                            // ABOUT
-                        </p>
-
-                        <p id="detailAbout">
-                            Project information goes here.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="detail-block">
-
-                        <p class="detail-label">
-                            // TECHNOLOGY
-                        </p>
-
-                        <div id="detailTech" class="detail-tech">
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="detail-block">
-
-                        <p class="detail-label">
-                            // MY CONTRIBUTION
-                        </p>
-
-                        <ul id="detailContributions">
-                        </ul>
-
-                    </div>
-
-
-                </div>
-
-
-                <!-- PROJECT LINK -->
-
-                <div class="project-links">
-
-                    <a id="detailLink" href="#" target="_blank" rel="noopener noreferrer" class="detail-link">
-
-                        <span id="detailLinkText">
-                            OPEN PROJECT
-                        </span>
-
-                        <span>→</span>
-
-                    </a>
+                    <span id="detailVisualPlatform">
+                        PC
+                    </span>
 
                 </div>
 
             </div>
 
-        </section>
+
+            <!-- SCANLINE -->
+
+            <div class="detail-scanline"></div>
+
+
+            <!-- CORNER MARKERS -->
+
+            <span class="visual-corner top-left"></span>
+            <span class="visual-corner top-right"></span>
+            <span class="visual-corner bottom-left"></span>
+            <span class="visual-corner bottom-right"></span>
+
+        </div>
+
+
+
+        <!-- =================================
+             BUILD DATA
+        ================================== -->
+
+        <div class="detail-build-data">
+
+
+            <div class="detail-build-stat">
+
+                <span>ENGINE</span>
+
+                <strong id="detailEngine">
+                    UNITY
+                </strong>
+
+            </div>
+
+
+            <div class="detail-build-stat">
+
+                <span>LANGUAGE</span>
+
+                <strong id="detailLanguage">
+                    C#
+                </strong>
+
+            </div>
+
+
+            <div class="detail-build-stat">
+
+                <span>PLATFORM</span>
+
+                <strong id="detailPlatform">
+                    PC
+                </strong>
+
+            </div>
+
+
+            <div class="detail-build-stat">
+
+                <span>STATUS</span>
+
+                <strong id="detailStatus">
+                    ACTIVE
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             CASE STUDY CONTENT
+        ================================== -->
+
+        <div class="project-case-study">
+
+
+            <!-- ABOUT -->
+
+            <section class="case-study-block">
+
+                <p class="detail-label">
+                    // ABOUT THE BUILD
+                </p>
+
+                <p id="detailAbout">
+                    Project information goes here.
+                </p>
+
+            </section>
+
+
+
+            <!-- SYSTEMS -->
+
+            <section class="case-study-block">
+
+                <p class="detail-label">
+                    // SYSTEMS BUILT
+                </p>
+
+                <div
+                    id="detailSystems"
+                    class="systems-list">
+                </div>
+
+            </section>
+
+
+
+            <!-- MY ROLE -->
+
+            <section class="case-study-block">
+
+                <p class="detail-label">
+                    // MY ROLE
+                </p>
+
+                <p id="detailRole" class="detail-role">
+                    GAMEPLAY PROGRAMMER
+                </p>
+
+            </section>
+
+
+
+            <!-- TECHNOLOGY -->
+
+            <section class="case-study-block">
+
+                <p class="detail-label">
+                    // TECHNOLOGY
+                </p>
+
+                <div
+                    id="detailTech"
+                    class="detail-tech">
+                </div>
+
+            </section>
+
+
+
+            <!-- CONTRIBUTION -->
+
+            <section class="case-study-block">
+
+                <p class="detail-label">
+                    // DEVELOPMENT WORK
+                </p>
+
+                <ul id="detailContributions">
+                </ul>
+
+            </section>
+
+
+
+            <!-- TECHNICAL DETAILS -->
+
+            <section class="case-study-block">
+
+                <p class="detail-label">
+                    // TECHNICAL NOTES
+                </p>
+
+                <p id="detailTechnicalNotes">
+                    Development details go here.
+                </p>
+
+            </section>
+
+
+        </div>
+<!-- =====================================
+     BUILD METADATA
+====================================== -->
+
+<div id="projectBuildHud" class="project-build-hud">
+</div>
+
+
+<!-- =====================================
+     GAMEPLAY SYSTEMS
+====================================== -->
+
+<section class="gameplay-systems">
+
+    <div class="systems-header">
+
+        <p class="detail-label">
+            // GAMEPLAY SYSTEMS
+        </p>
+
+        <h3>
+            WHAT MAKES
+            <span>IT WORK.</span>
+        </h3>
+
+    </div>
+
+    <div id="gameplaySystems" class="systems-grid">
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     DEVELOPMENT BREAKDOWN
+====================================== -->
+
+<section class="development-breakdown">
+
+    <div class="breakdown-header">
+
+        <p class="detail-label">
+            // DEVELOPMENT BREAKDOWN
+        </p>
+
+        <h3>
+            BUILT
+            <span>FROM CODE.</span>
+        </h3>
+
+    </div>
+
+    <div id="developmentBreakdown" class="breakdown-list">
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     PLAYABLE BUILD
+====================================== -->
+
+<section class="playable-build">
+
+    <p class="playable-build-label">
+        // BUILD TERMINAL
+    </p>
+
+    <h3>
+        READY TO
+        <span>PLAY?</span>
+    </h3>
+
+    <p id="playableBuildDescription">
+        Explore the project and experience the build.
+    </p>
+
+    <a
+        id="playableBuildLink"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="detail-link"
+    >
+
+        <span id="playableBuildLinkText">
+            OPEN BUILD
+        </span>
+
+        <span>→</span>
+
+    </a>
+
+</section>
+
+
+
+        <!-- BUILD FOOTER -->
+
+        <div class="detail-footer">
+
+            <span>
+                BAGHEL.EXE
+            </span>
+
+            <span>
+                BUILD COMPLETE //
+                <span id="detailFooterBuild">
+                    BUILD_01
+                </span>
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
 
     </main>
 

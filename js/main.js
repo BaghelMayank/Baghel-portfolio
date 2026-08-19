@@ -48,6 +48,80 @@ const projects = {
             "Documentation",
             "Asset Store publishing"
         ],
+        buildInfo: {
+    engine: "UNITY",
+    language: "C#",
+    platform: "UNITY EDITOR",
+    status: "RELEASED TOOL"
+},
+
+systems: [
+
+    {
+        title: "PARTICLE GENERATION",
+        description:
+            "Reusable system for creating sprite-based particle effects."
+    },
+
+    {
+        title: "EDITOR WORKFLOW",
+        description:
+            "Designed workflow for creating and configuring effects directly inside Unity."
+    },
+
+    {
+        title: "SPRITE EFFECTS",
+        description:
+            "Built around 2D sprite-based visual effects."
+    },
+
+    {
+        title: "PIPELINE SUPPORT",
+        description:
+            "Configured compatibility across Built-in, URP and HDRP."
+    },
+
+    {
+        title: "REUSABLE ARCHITECTURE",
+        description:
+            "Designed the tool as a reusable Unity development package."
+    }
+
+],
+
+breakdown: [
+
+    {
+        title: "TOOL ARCHITECTURE",
+        description:
+            "Designed the reusable architecture behind the particle tool."
+    },
+
+    {
+        title: "PARTICLE SYSTEM",
+        description:
+            "Implemented the core sprite-based particle workflow."
+    },
+
+    {
+        title: "EDITOR WORKFLOW",
+        description:
+            "Created the workflow used by developers inside the Unity Editor."
+    },
+
+    {
+        title: "PIPELINE SUPPORT",
+        description:
+            "Tested compatibility across Unity rendering pipelines."
+    },
+
+    {
+        title: "PUBLISHING",
+        description:
+            "Prepared documentation and published the tool to the Unity Asset Store."
+    }
+
+],
 
         link: "https://assetstore.unity.com/packages/tools/particles-effects/customparticlefxtool-331646",
         linkText: "VIEW ON UNITY ASSET STORE"
@@ -87,6 +161,86 @@ const projects = {
             "UI",
             "WebGL deployment"
         ],
+        buildInfo: {
+        engine: "UNITY",
+        language: "C#",
+        platform: "WEBGL",
+        status: "PLAYABLE"
+    },
+
+    systems: [
+
+        {
+            title: "PLAYER MOVEMENT",
+            description:
+                "Responsive player movement designed around arcade-style space combat."
+        },
+
+        {
+            title: "PROJECTILE COMBAT",
+            description:
+                "Projectile-based shooting system handling firing, movement and hit detection."
+        },
+
+        {
+            title: "ENEMY SYSTEM",
+            description:
+                "Enemy spawning and behaviour systems used to create gameplay pressure."
+        },
+
+        {
+            title: "HEALTH SYSTEM",
+            description:
+                "Damage and health logic connecting player and combat interactions."
+        },
+
+        {
+            title: "GAME STATE",
+            description:
+                "Gameplay flow connecting active play, scoring, failure and restart states."
+        },
+
+        {
+            title: "VFX",
+            description:
+                "Visual feedback systems used to improve combat readability and impact."
+        }
+
+    ],
+
+    breakdown: [
+
+        {
+            title: "PLAYER CONTROLLER",
+            description:
+                "Implemented player movement and gameplay input handling."
+        },
+
+        {
+            title: "COMBAT SYSTEM",
+            description:
+                "Built projectile firing and collision-based combat interactions."
+        },
+
+        {
+            title: "ENEMY BEHAVIOUR",
+            description:
+                "Created enemy spawning and gameplay behaviour."
+        },
+
+        {
+            title: "HEALTH & DAMAGE",
+            description:
+                "Connected damage events with player health and game state."
+        },
+
+        {
+            title: "UI & GAME FLOW",
+            description:
+                "Implemented gameplay UI and overall game-state transitions."
+        }
+
+    ],
 
         link: "https://play.unity.com/en/games/0c940df3-7bfb-4c65-b935-8960541ffc14/spacequest",
         linkText: "PLAY GAME"
@@ -125,7 +279,86 @@ const projects = {
             "Mobile optimization",
             "AdMob integration"
         ],
+buildInfo: {
+    engine: "UNITY",
+    language: "C#",
+    platform: "ANDROID",
+    status: "MOBILE BUILD"
+},
 
+systems: [
+
+    {
+        title: "CORE GAMEPLAY",
+        description:
+            "Main gameplay loop designed around fast mobile interactions."
+    },
+
+    {
+        title: "SCORING",
+        description:
+            "Score tracking system providing progression and replay motivation."
+    },
+
+    {
+        title: "UI SYSTEM",
+        description:
+            "Mobile-oriented interface handling gameplay and game-state feedback."
+    },
+
+    {
+        title: "GAME FLOW",
+        description:
+            "Complete flow connecting gameplay, menus and restart states."
+    },
+
+    {
+        title: "MOBILE INPUT",
+        description:
+            "Gameplay interactions designed around mobile controls."
+    },
+
+    {
+        title: "MONETIZATION",
+        description:
+            "Integrated Google Mobile Ads for in-game monetization."
+    }
+
+],
+
+breakdown: [
+
+    {
+        title: "GAMEPLAY LOOP",
+        description:
+            "Designed and implemented the core gameplay loop."
+    },
+
+    {
+        title: "SCORING SYSTEM",
+        description:
+            "Implemented score tracking and gameplay progression."
+    },
+
+    {
+        title: "UI & MENUS",
+        description:
+            "Built gameplay UI and menu flow."
+    },
+
+    {
+        title: "MOBILE OPTIMIZATION",
+        description:
+            "Adapted gameplay and UI for mobile interaction."
+    },
+
+    {
+        title: "ADMOB",
+        description:
+            "Integrated Google Mobile Ads into the game."
+    }
+
+],
         link: null
 
     },
@@ -165,6 +398,92 @@ const projects = {
             "Locked-door behaviour",
             "Environmental interactions"
         ],
+        buildInfo: {
+    engine: "UNITY",
+    language: "C#",
+    platform: "PC",
+    status: "IN DEVELOPMENT"
+},
+
+systems: [
+
+    {
+        title: "FPS CONTROLLER",
+        description:
+            "First-person movement and camera system built around CharacterController."
+    },
+
+    {
+        title: "INTERACTION SYSTEM",
+        description:
+            "Reusable interaction architecture for doors, switches and world objects."
+    },
+
+    {
+        title: "OBJECT INSPECTION",
+        description:
+            "Inspectable object system allowing players to examine environmental objects."
+    },
+
+    {
+        title: "DOOR SYSTEM",
+        description:
+            "Interactive and locked-door behaviour connected to gameplay state."
+    },
+
+    {
+        title: "FLASHLIGHT",
+        description:
+            "Player flashlight system used as both navigation and atmosphere."
+    },
+
+    {
+        title: "ENVIRONMENT",
+        description:
+            "Lighting and environmental interactions designed to support horror atmosphere."
+    }
+
+],
+
+breakdown: [
+
+    {
+        title: "FPS CONTROLLER",
+        description:
+            "Implemented first-person movement, camera and player control."
+    },
+
+    {
+        title: "INTERACTION ARCHITECTURE",
+        description:
+            "Created reusable interaction logic for multiple environmental objects."
+    },
+
+    {
+        title: "DOOR SYSTEM",
+        description:
+            "Built interactive and locked-door behaviours."
+    },
+
+    {
+        title: "OBJECT INSPECTION",
+        description:
+            "Implemented inspectable objects and interaction feedback."
+    },
+
+    {
+        title: "FLASHLIGHT SYSTEM",
+        description:
+            "Created flashlight controls and lighting interactions."
+    },
+
+    {
+        title: "ENVIRONMENTAL GAMEPLAY",
+        description:
+            "Connected world interactions with exploration and atmosphere."
+    }
+
+],
 
         link: null
 
@@ -255,8 +574,8 @@ function openProject(projectId) {
 const detailImage =
     document.getElementById("detailImage");
 
-const visualPlaceholder =
-    document.querySelector(".visual-placeholder");
+//const visualPlaceholder =
+   // document.querySelector(".visual-placeholder");
 
 
 if (project.image) {
@@ -265,13 +584,13 @@ if (project.image) {
 
     detailImage.style.display = "block";
 
-    visualPlaceholder.style.display = "none";
+    //visualPlaceholder.style.display = "none";
 
 } else {
 
     detailImage.style.display = "none";
 
-    visualPlaceholder.style.display = "flex";
+   // visualPlaceholder.style.display = "flex";
 
 }
 
@@ -331,32 +650,196 @@ if (project.image) {
 
     });
 
-
-    // =========================================
-// PROJECT LINK
+// =========================================
+// BUILD HUD 
 // =========================================
 
-const detailLink =
-    document.getElementById("detailLink");
+const buildHud =
+    document.getElementById("projectBuildHud");
 
-const detailLinkText =
-    document.getElementById("detailLinkText");
+buildHud.innerHTML = "";
+
+if (project.buildInfo) {
+
+    const buildItems = [
+
+        {
+            label: "ENGINE",
+            value: project.buildInfo.engine
+        },
+
+        {
+            label: "LANGUAGE",
+            value: project.buildInfo.language
+        },
+
+        {
+            label: "PLATFORM",
+            value: project.buildInfo.platform
+        },
+
+        {
+            label: "STATUS",
+            value: project.buildInfo.status
+        }
+
+    ];
+
+    buildItems.forEach((item, index) => {
+
+        const div =
+            document.createElement("div");
+
+        div.className = "build-hud-item";
+
+        if (item.label === "STATUS") {
+
+            div.innerHTML = `
+                <span class="build-hud-label">
+                    ${item.label}
+                </span>
+
+                <strong class="build-hud-value build-hud-status">
+                    <i></i>
+                    ${item.value}
+                </strong>
+            `;
+
+        } else {
+
+            div.innerHTML = `
+                <span class="build-hud-label">
+                    ${item.label}
+                </span>
+
+                <strong class="build-hud-value">
+                    ${item.value}
+                </strong>
+            `;
+
+        }
+
+        buildHud.appendChild(div);
+
+    });
+
+}
+// =========================================
+// GAMEPLAY SYSTEMS 
+// =========================================
+
+const systemsContainer =
+    document.getElementById("gameplaySystems");
+
+systemsContainer.innerHTML = "";
+
+if (project.systems) {
+
+    project.systems.forEach((system, index) => {
+
+        const card =
+            document.createElement("article");
+
+        card.className = "system-card";
+
+        card.innerHTML = `
+
+            <span class="system-index">
+                SYSTEM_${String(index + 1).padStart(2, "0")}
+            </span>
+
+            <h4>
+                ${system.title}
+            </h4>
+
+            <p>
+                ${system.description}
+            </p>
+
+        `;
+
+        systemsContainer.appendChild(card);
+
+    });
+
+}
+// =========================================
+// DEVELOPMENT BREAKDOWN 
+// =========================================
+
+const breakdownContainer =
+    document.getElementById("developmentBreakdown");
+
+breakdownContainer.innerHTML = "";
+
+if (project.breakdown) {
+
+    project.breakdown.forEach((item, index) => {
+
+        const row =
+            document.createElement("div");
+
+        row.className = "breakdown-item";
+
+        row.innerHTML = `
+
+            <span class="breakdown-number">
+                ${String(index + 1).padStart(2, "0")}
+            </span>
+
+            <strong class="breakdown-title">
+                ${item.title}
+            </strong>
+
+            <p class="breakdown-description">
+                ${item.description}
+            </p>
+
+        `;
+
+        breakdownContainer.appendChild(row);
+
+    });
+
+}
+// =========================================
+// PLAYABLE BUILD 
+// =========================================
+
+const playableBuildLink =
+    document.getElementById("playableBuildLink");
+
+const playableBuildLinkText =
+    document.getElementById("playableBuildLinkText");
+
+const playableBuildDescription =
+    document.getElementById("playableBuildDescription");
 
 
 if (project.link) {
 
-    detailLink.href = project.link;
+    playableBuildLink.href =
+        project.link;
 
-    detailLinkText.textContent =
-        project.linkText || "OPEN PROJECT";
+    playableBuildLinkText.textContent =
+        project.linkText || "OPEN BUILD";
 
-    detailLink.style.display = "inline-flex";
+    playableBuildLink.style.display =
+        "inline-flex";
+
+    playableBuildDescription.textContent =
+        "The build is live. Open it and experience the project.";
 
 } else {
 
-    detailLink.style.display = "none";
+    playableBuildLink.style.display =
+        "none";
+
+    playableBuildDescription.textContent =
+        "This build is currently in development.";
 
 }
+  
 // =========================================
 // SHOW PROJECT DETAIL
 // =========================================
